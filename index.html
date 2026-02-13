@@ -26,23 +26,47 @@
 
     <h2>¿Qué incluye?</h2>
     <ul>
-      <li>🐶 1 chapas por mascota</li>
-      <li>🔹 1 chapa grande</li>
-      <li>🔸 1 chapa chica</li>
-      <li>💰 Ambas al mismo precio</li>
+      <li>🐶 1 chapa por mascota</li>
+      <li>🔹 Tamaño grande o chico (mismo precio)</li>
+      <li>📱 Página web personalizada</li>
+      <li>🗺️ Botón para enviar ubicación</li>
+      <li>📞 Botón para llamar al dueño</li>
+      <li>⚡ Activación inmediata</li>
+    </ul>
+
+    <h2>¿Qué datos aparecen al escanear?</h2>
+    <ul>
+      <li>Nombre de la mascota</li>
+      <li>Foto</li>
+      <li>Zona donde vive</li>
+      <li>Estado de salud</li>
+      <li>Vacunas</li>
+      <li>Observaciones</li>
+      <li>Teléfono del dueño</li>
     </ul>
 
     <p class="highlight">
-      Funciona en cualquier celular, las 24 hs.
+      Funciona en cualquier celular, las 24 hs, sin aplicaciones.
     </p>
 
-    <button class="btn" onclick="ejemploWhatsApp()">
-      Ver ejemplo de contacto
+    <h2>Solicitar mi PetQR</h2>
+
+    <div class="form">
+      <input type="text" id="nombre" placeholder="Nombre de la mascota">
+      <input type="text" id="tipo" placeholder="Perro o Gato">
+      <input type="text" id="tamano" placeholder="Chapa Grande o Chica">
+      <input type="text" id="zona" placeholder="Zona donde vive">
+      <input type="text" id="telefono" placeholder="Teléfono de contacto">
+      <textarea id="obs" placeholder="Observaciones (salud, vacunas, etc)"></textarea>
+    </div>
+
+    <button class="btn" onclick="enviarWhatsApp()">
+      Solicitar por WhatsApp
     </button>
   </div>
 
   <div class="legal">
-    PetQR no guarda datos ni ubicaciones.
+    PetQR no guarda datos ni ubicaciones. La información solo se muestra al escanear el QR.
   </div>
 </div>
 
