@@ -30,9 +30,9 @@ function enviarWhatsApp() {
     "🧠 Conducta: " + conducta + "\n" +
     "📝 Observaciones: " + obs;
 
-  const numeroVendedor = "549XXXXXXXXXX"; 
+  const numeroVendedor = "5491144408187"; 
   // ⚠️ Reemplazá por tu número real con código país.
-  // Ejemplo Argentina: 54911XXXXXXXX
+  // Ejemplo Argentina: 5491144408187
 
   const url = "https://wa.me/" + numeroVendedor + "?text=" + encodeURIComponent(mensaje);
 
