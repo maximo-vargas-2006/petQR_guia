@@ -38,10 +38,11 @@
     <ul>
       <li>Nombre de la mascota</li>
       <li>Foto</li>
+      <li>Fecha de nacimiento</li>
       <li>Zona donde vive</li>
       <li>Estado de salud</li>
       <li>Vacunas</li>
-      <li>Observaciones</li>
+      <li>Observaciones de conducta</li>
       <li>Teléfono del dueño</li>
     </ul>
 
@@ -54,10 +55,16 @@
     <div class="form">
       <input type="text" id="nombre" placeholder="Nombre de la mascota">
       <input type="text" id="tipo" placeholder="Perro o Gato">
+      <input type="date" id="nacimiento">
       <input type="text" id="tamano" placeholder="Chapa Grande o Chica">
       <input type="text" id="zona" placeholder="Zona donde vive">
       <input type="text" id="telefono" placeholder="Teléfono de contacto">
-      <textarea id="obs" placeholder="Observaciones (salud, vacunas, etc)"></textarea>
+      
+      <input type="text" id="salud" placeholder="Estado de salud (Ej: Diabético, Alergias, etc)">
+      <input type="text" id="vacunas" placeholder="Vacunas aplicadas">
+      
+      <textarea id="conducta" placeholder="Observaciones de conducta (Ej: Asustadizo, No agresivo, etc)"></textarea>
+      <textarea id="obs" placeholder="Observaciones generales"></textarea>
     </div>
 
     <button class="btn" onclick="enviarWhatsApp()">
